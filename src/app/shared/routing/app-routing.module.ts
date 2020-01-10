@@ -15,7 +15,7 @@ import { HomeComponent } from 'src/app/components/home/home.component';
 
 // Include route guard in routes array
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full'},
+  { path: '', redirectTo: '/sign-in', pathMatch: 'full'},
   { path: 'home', component: HomeComponent},
   { path: 'sign-in', component: SignInComponent, canActivate: [SecureInnerPagesGuard]},
   { path: 'register-user', component: SignUpComponent, canActivate: [SecureInnerPagesGuard]},
